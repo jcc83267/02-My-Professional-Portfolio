@@ -1,0 +1,198 @@
+
+:root {
+    --primary-color: #68747d;
+    --secondary-color:#005f69;
+    --tertiary-color: #b9bbb7;
+}
+/* header start */
+header {
+    /* apply styles to <header> */
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+header nav {
+    margin:7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/*header end*/
+
+/*hero start*/
+.hero {
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 600px;
+    position: relative;
+}
+.hero-text {
+    font-size: 36px;
+    text-align: right;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/*hero end*/
+
+/*about me start*/
+.about-me p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+/*about me end*/
+
+/* my works start */
+
+
+.work-grid-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(3, 4fr);
+    color: var(--secondary-color);
+    font-size: 18px;
+    gap: 5px;
+}
+.work-grid-item {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    
+}
+.work-grid-item.grid-title {
+    grid-column: 1 / 1;
+}
+.work-grid-item.project-1 {
+    grid-column: 2/ span 2;
+    grid-row: 1/ span 2;
+}
+.work-grid-item.project-2 {
+    grid-column: 4/span 1;
+    grid-row: 1/ span 1;
+}
+.work-grid-item.project-3 {
+    grid-column: 2/span 1;
+    grid-row: 3/ span 1;
+}
+/* my works end*/
+
+/* contact me start*/
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-title {
+    text-size-adjust: 1.55vw;
+}
+.contact h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contacts a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+.contacts div{
+    margin:7px 0;
+}
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.contacts ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+}
+.contacts ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* contact me end*/
+* {
+    margin: 0px;
+    padding: 0px;
+    /* * /
+    margin: 3px;
+    padding: 3px;
+    border: solid grey; /* change above to zero and get rid of this line*/
+    box-sizing: border-box;
+    background-color: rgb(55, 55, 70);
+}
+body {
+    /* changes the font color */
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--tertiary-color);
+}
+.section-title {
+    font-size: 40px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    text-align: left;
+    margin: 0 auto;
+}
