@@ -136,6 +136,7 @@ header nav ul li a:hover {
     background-color: var(--tertiary-color);
     position: relative;
 }
+
 .work-grid-item:hover {
     cursor:pointer;
     opacity: 0.8;
@@ -144,17 +145,27 @@ header nav ul li a:hover {
     position: absolute;
     top: 8px;
     left: 16px;
-    color:var(--primary-color)
+    color:var(--tertiary-color)
 }
 .project-1 {
+    background-image: url("../images/Event-Planner.png");
+    background-size: cover;
+    object-fit: cover;
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+}
+.project-2 {
     background-image: url("../images/run-buddy-tile-bg.JPG");
     background-size: cover;
     object-fit: cover;
 }
-.project-2 {
+.project-3 {
     background-image: url("../images/my-portfolio.jpg");
     background-size: cover;
     object-fit: cover;
+}
+.work-grid-container *{
+    color: var(--tertiary-color)
 }
 /* my works end*/
 /* contact me start*/
