@@ -148,18 +148,25 @@ header nav ul li a:hover {
     color:var(--tertiary-color)
 }
 .project-1 {
-    background-image: url("../images/Event-Planner.png");
+    background-image: url("../images/the-bloc.png");
     background-size: cover;
     object-fit: cover;
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
 }
+
 .project-2 {
+    background-image: url("../images/Event-Planner.png");
+    background-size: cover;
+    object-fit: cover;
+}
+
+.project-3 {
     background-image: url("../images/run-buddy-tile-bg.JPG");
     background-size: cover;
     object-fit: cover;
 }
-.project-3 {
+.project-4 {
     background-image: url("../images/my-portfolio.jpg");
     background-size: cover;
     object-fit: cover;
